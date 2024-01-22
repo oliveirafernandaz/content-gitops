@@ -1,5 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
+on:
+  push
 metadata:
   name: hello
   namespace: lasample
@@ -16,4 +18,4 @@ spec:
     spec:
       containers:
       - name: hello
-        image: oliveirafernandaz/gitops:hellov1.1
+        image: oliveirafernandaz/gitops:hellov1.0
